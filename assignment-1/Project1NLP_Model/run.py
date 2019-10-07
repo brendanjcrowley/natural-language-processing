@@ -4,13 +4,14 @@ import numpy as np
 import cv2
 import editdistance
 import tensorflow as tf
+import os
 
 
 
-ExpDir = '/Users/haithem.afli/Desktop/CIT/Research/IndustryProjects/Unitek/NN_OCR/run_model/'
-#print ('Experiment Dir is:' + ExpDir)
-modelDir = '/Users/haithem.afli/Desktop/CIT/Research/IndustryProjects/Unitek/NN_OCR/run_model/model/'
-#print ('Model is in:' + modelDir)
+ExpDir = os.getcwd() + "/"
+print ('Experiment Dir is:' + ExpDir)
+modelDir = os.getcwd() + "/model/"
+print ('Model is in:' + modelDir)
 #You need to change this path with your local path to the saved model I provides with the code
 
 class FilePaths:
